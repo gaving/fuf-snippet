@@ -1,0 +1,17 @@
+diff --git .vim/plugin/snipMate.vim .vim/plugin/snipMate.vim
+index 3efee2a..1e56c13 100644
+--- .vim/plugin/snipMate.vim
++++ .vim/plugin/snipMate.vim
+@@ -210,6 +210,12 @@ fun s:ChooseSnippet(scope, trigger)
+ 	return num == -1 ? '' : s:multi_snips[a:scope][a:trigger][num][1]
+ endf
+ 
++fun! ReturnSnippets(ft)
++	if has_key(s:snippets, a:ft)
++		return keys(s:snippets[a:ft])
++	endif
++endf
++
+ fun! ShowAvailableSnips()
+ 	let line  = getline('.')
+ 	let col   = col('.')
