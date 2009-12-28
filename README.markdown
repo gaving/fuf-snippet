@@ -17,7 +17,7 @@ Example use within a PHP filetype:-
 
 ## Installation
 
-- Patch snipMate (snipmate.patch) e.g. `patch -p0 < snipmate.patch'
+- Patch snipMate (snipmate.patch) e.g. `patch -p0 < snipmate.patch`
 - Patch FuzzyFinder (fuf.patch) e.g. `patch -p0 < fuf.patch`
 - Copy 'snippet.vim' to ~/.vim/autoload/fuf/
 - Map something to :FufSnippet e.g. `map <Leader>s :FufSnippet<CR>`
